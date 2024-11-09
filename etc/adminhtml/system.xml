@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="opengento" translate="label" sortOrder="999">
+			<label>Opengento</label>
+		</tab>
+		<section id="varnish_flush" sortOrder="10" showInWebsite="0" showInStore="0" showInDefault="1" translate="label">
+			<label>Varnish Flush Manager</label>
+			<tab>opengento</tab>
+			<resource>Opengento_VarnishFlushManager::config_opengento_varnishflushmanager</resource>
+			<group id="options" sortOrder="10" showInWebsite="0" showInStore="0" showInDefault="1" translate="label">
+				<label>Options</label>
+				<field id="enable_log" type="select" sortOrder="10" showInWebsite="0" showInStore="0" showInDefault="1" translate="label">
+					<label>Enable Log</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="blocked_tags" type="text" sortOrder="10" showInWebsite="0" showInStore="0" showInDefault="1" translate="label">
+					<label>Blocked Tags</label>
+					<comment>Comma separated tags, if found in a Flush call, it will be intercepted and cancelled</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Opengento\VarnishFlushManager\Api\FlushRepositoryInterface" type="Opengento\VarnishFlushManager\Model\FlushRepository"/>
+	<preference for="Opengento\VarnishFlushManager\Api\Data\FlushInterface" type="Opengento\VarnishFlushManager\Model\Flush"/>
+	<preference for="Opengento\VarnishFlushManager\Api\Data\FlushSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Opengento\VarnishFlushManager\Model\ResourceModel\Flush\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">opengento_varnishflushmanager_flush</argument>
+			<argument name="resourceModel" xsi:type="string">Opengento\VarnishFlushManager\Model\ResourceModel\Flush\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="opengento_varnishflushmanager_flush_listing_data_source" xsi:type="string">Opengento\VarnishFlushManager\Model\ResourceModel\Flush\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>

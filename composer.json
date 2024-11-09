@@ -1,14 +1,16 @@
 {
-    "name": "opengento/module-varnish-flush-manager",
-    "version": "1.0.0",
-    "description": "N/A",
+    "name": "opengento/module-varnishflushmanager",
+    "description": "Varnish Flush Manager",
     "type": "magento2-module",
-    "require": {
-        "magento/framework": "*"
-    },
-    "license": [
-        "Proprietary"
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Anthony Grutter",
+            "email": "anthony@bird.eu"
+        }
     ],
+    "minimum-stability": "dev",
+    "require": {},
     "autoload": {
         "files": [
             "registration.php"

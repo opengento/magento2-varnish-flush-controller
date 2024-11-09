@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Opengento::top_level" title="Opengento" module="Opengento_VarnishFlushManager" sortOrder="9999" resource="Magento_Backend::content"/>
+		<add id="Opengento_VarnishFlushManager::opengento_varnishflushmanager_flush" title="Flush" module="Opengento_VarnishFlushManager" sortOrder="9999" resource="Magento_Backend::content" parent="Opengento::top_level" action="opengento_varnishflushmanager/flush/index"/>
+	</menu>
+</config>
