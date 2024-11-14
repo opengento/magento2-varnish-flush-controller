@@ -12,6 +12,8 @@ use Opengento\VarnishFlushManager\Api\Data\FlushInterface;
 
 class Flush extends AbstractModel implements FlushInterface
 {
+    const string STATUS_LOG = 'log';
+    const string STATUS_INTERRUPT = 'interrupt';
 
     /**
      * @inheritDoc

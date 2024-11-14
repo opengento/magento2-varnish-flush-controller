@@ -16,4 +16,8 @@
 			</argument>
 		</arguments>
 	</type>
+    <type name="Magento\CacheInvalidate\Model\PurgeCache">
+        <plugin name="send_purge_request"
+                type="Opengento\VarnishFlushManager\Plugin\SendPurgeRequest" sortOrder="1"/>
+    </type>
 </config>

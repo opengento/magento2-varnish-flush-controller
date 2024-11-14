@@ -61,27 +61,6 @@
 				<label translate="true">flush_id</label>
 			</settings>
 		</column>
-		<settings>
-			<editorConfig>
-				<param name="selectProvider" xsi:type="string">opengento_varnishflushmanager_flush_listing.opengento_varnishflushmanager_flush_listing.opengento_varnishflushmanager_flush_columns.ids</param>
-				<param name="enabled" xsi:type="boolean">true</param>
-				<param name="indexField" xsi:type="string">flush_id</param>
-				<param name="clientConfig" xsi:type="array">
-					<item name="saveUrl" xsi:type="url" path="opengento_varnishflushmanager/Flush/inlineEdit"/>
-					<item name="validateBeforeSave" xsi:type="boolean">false</item>
-				</param>
-			</editorConfig>
-			<childDefaults>
-				<param name="fieldAction" xsi:type="array">
-					<item name="provider" xsi:type="string">opengento_varnishflushmanager_flush_listing.opengento_varnishflushmanager_flush_listing.opengento_varnishflushmanager_flush_columns_editor</item>
-					<item name="target" xsi:type="string">startEdit</item>
-					<item name="params" xsi:type="array">
-						<item name="0" xsi:type="string">${ $.$data.rowIndex }</item>
-						<item name="1" xsi:type="boolean">true</item>
-					</item>
-				</param>
-			</childDefaults>
-		</settings>
 		<column name="tags">
 			<settings>
 				<filter>text</filter>

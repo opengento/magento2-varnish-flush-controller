@@ -5,7 +5,6 @@
 		<constraint xsi:type="primary" referenceId="PRIMARY">
 			<column name="flush_id"/>
 		</constraint>
-		<column name="flush_id" nullable="false" xsi:type="int" comment="flush_id" identity="true"/>
 		<column name="tags" nullable="true" xsi:type="text" comment="tags"/>
 		<column name="stack" nullable="true" xsi:type="text" comment="stack"/>
 		<column name="context" nullable="true" xsi:type="text" comment="context"/>
